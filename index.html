@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Login Section -->
+  <div class="login-box" id="loginBox">
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Enter Username or Email">
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="login()">Login</button>
+
+    <p class="note">Demo Login: Any username and password</p>
+  </div>
+
+  <!-- App Section -->
+  <div class="app-box hidden" id="appBox">
+
+    <div class="top-bar">
+      <h2>My To-Do List</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Add Task -->
+    <div class="task-form">
+      <input type="text" id="taskTitle" placeholder="Task Title">
+      <textarea id="taskDescription" placeholder="Task Description (Optional)"></textarea>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <!-- Pending Tasks -->
+    <div class="task-section">
+      <h3>Pending Tasks</h3>
+      <div id="pendingTasks"></div>
+    </div>
+
+    <!-- Completed Tasks -->
+    <div class="task-section">
+      <h3>Completed Tasks</h3>
+      <div id="completedTasks"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

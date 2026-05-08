@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ec8703;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.login-box,
+.app-box {
+  background: rgb(7, 189, 225);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-box h2,
+.app-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e4fc7;
+}
+
+.hidden {
+  display: none;
+}
+
+.note {
+  margin-top: 10px;
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: crimson;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+.task-form {
+  margin-bottom: 25px;
+}
+
+.task-section {
+  margin-top: 20px;
+}
+
+.task-card {
+  background: #f9fafc;
+  border-left: 5px solid #2563eb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.task-card.completed {
+  border-left-color: green;
+  opacity: 0.8;
+}
+
+.task-card h4 {
+  margin-bottom: 8px;
+}
+
+.task-buttons {
+  margin-top: 10px;
+}
+
+.task-buttons button {
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.complete-btn {
+  background: green;
+}
+
+.edit-btn {
+  background: orange;
+}
+
+.delete-btn {
+  background: crimson;
+}
